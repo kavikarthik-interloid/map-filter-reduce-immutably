@@ -12,24 +12,16 @@ const userList = [
   ["DivyaApps", 22, "MobileAppDeveloper", 2],
 ];
 
-// 1) Map all users with their details 
-let developersList = userList.map((user) => {
-  for (let i = 0; i < user; i++) {
-    console.log(i);
-  }
-  return user;
-});
-// console.log(developersList)
-
-// 2) Map the names of the candidates 
+// 1) Map the names of the candidates 
 
 let developerNames = userList.map((user) => {
   const userName = user[0];
   return userName;
 });
-// console.log(developerNames)
+console.log("developerNames :",developerNames);
+console.log('################################################')
 
-// 3) converting userList into json objects 
+// 2) converting userList into json objects 
 
 let userDetails = userList.map(([name, age, role, experience]) => ({
   name,
@@ -37,11 +29,13 @@ let userDetails = userList.map(([name, age, role, experience]) => ({
   role,
   experience,
 }));
-console.log(userDetails);
+console.log("userDetails :",userDetails);
+console.log('################################################')
 
-// 4) returns a new array without modifying the original array 
+// 3) returns a new array without modifying the original array 
  
 const fruits = ["apple", "orange", "grapes"];
-let upperCase = fruits.map((fruit) => fruit.toUpperCase());
+let uppercaseFruits = fruits.map((fruit) => fruit.toUpperCase());
 
-// console.log(upperCase)
+console.log("uppercaseFruits :",uppercaseFruits);
+console.log('################################################')

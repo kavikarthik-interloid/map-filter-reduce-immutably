@@ -67,10 +67,12 @@ const userList = [
   },
 ]
 
-// Filter users with more than 5 years of experience
-const experiencedUsers = userList.filter((user) => user.experience > 5);
-// console.log(user)
+// 1) Filter users with more than 5 years of experience
+const experiencedUsers = userList.filter((user) => user.experience >= 5);
+console.log("experiencedUsers :", experiencedUsers);
+console.log('################################################')
 
-//Filter users with the same age
-const sameAge = userList.filter((users) => users.age === 22);
-console.log(sameAge)  
+// 2) Filter users with the same age
+const usersWithSameAge = userList.filter((users) => users.age === 22);
+console.log("usersWithSameAge :", usersWithSameAge)  
+console.log('################################################')
