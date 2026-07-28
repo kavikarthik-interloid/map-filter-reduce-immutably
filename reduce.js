@@ -1,15 +1,11 @@
-//immutable with numbers
-const input = [1,5,6,8,10,23,5];
+// 1) Immutable operation with numbers using reduce()
+const numbers = [1,5,6,8,10,23,5];
 
-const total = input.reduce((a,b) => a+b)
+const totalCount = numbers.reduce((total ,currentvalue) => total + currentvalue)
+console.log(totalCount);
 
-console.log(input);
-console.log(total);
+// 2) immutable operation with characters using reduce()
+const characters = ["k","a","v","i","n"];
+const fullname = characters.reduce( (totalLetters, currentLetter) => totalLetters + currentLetter);
 
-//immutable with characters
-const name = ["k","a","v","i","n"];
-
-const fullname = name.reduce( (first, next) => first + next)
-
-console.log(name);
-console.log(fullname)
+console.log(fullname);
