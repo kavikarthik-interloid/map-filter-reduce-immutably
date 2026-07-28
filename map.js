@@ -1,5 +1,4 @@
-//mapped the data 
-const input = [
+const userList = [
   ["KaviKarthiK", 22, "FullStackDeveloper", 6],
   ["ArjunDev", 24, "FrontendDeveloper", 3],
   ["PriyaCodes", 21, "BackendDeveloper", 2],
@@ -13,34 +12,36 @@ const input = [
   ["DivyaApps", 22, "MobileAppDeveloper", 2],
 ];
 
-let value = input.map((data) => {
-//   console.log(data);
-//   for (let i = 0; i < data; i++) {
-//     console.log(i);
-//   }
+// 1) Map all users with their details 
+let developersList = userList.map((user) => {
+  for (let i = 0; i < user; i++) {
+    console.log(i);
+  }
+  return user;
 });
+// console.log(developersList)
 
-let allitems = input.map((item)=>{
-    const value = item[0];
-    // console.log(value)
-})
+// 2) Map the names of the candidates 
 
-//convert into json objects
+let developerNames = userList.map((user) => {
+  const userName = user[0];
+  return userName;
+});
+// console.log(developerNames)
 
-let result = input.map(([name,age,role,experience])=> ({
-    name,
-    age,
-    role,
-    experience
-}))
-// console.log(result);
+// 3) converting userList into json objects 
+
+let userDetails = userList.map(([name, age, role, experience]) => ({
+  name,
+  age,
+  role,
+  experience,
+}));
+console.log(userDetails);
+
+// 4) returns a new array without modifying the original array 
  
+const fruits = ["apple", "orange", "grapes"];
+let upperCase = fruits.map((fruit) => fruit.toUpperCase());
 
-// immutable 
-
-const fruits = ["apple","orange","grapes"];
-
-let upper = fruits.map((fruit)=> fruit.toUpperCase())
-
-console.log(upper)
-
+// console.log(upperCase)
