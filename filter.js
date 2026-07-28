@@ -1,4 +1,4 @@
-const input = [
+const userList = [
   {
     name: "KaviKarthiK",
     age: 22,
@@ -67,10 +67,10 @@ const input = [
   },
 ]
 
-//filtered the experience//
-const user = input.filter((item) => item.experience > 5);
+// Filter users with more than 5 years of experience
+const experiencedUsers = userList.filter((user) => user.experience > 5);
 // console.log(user)
 
-//filtered through age//
-const sameage = input.filter((users) => users.age === 22);
-console.log(sameage)
+//Filter users with the same age
+const sameAge = userList.filter((users) => users.age === 22);
+console.log(sameAge)  
